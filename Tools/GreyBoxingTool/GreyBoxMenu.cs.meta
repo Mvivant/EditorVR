@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 00e6219f3a254a24f99a53fa1d8f33b0
+timeCreated: 1475245292
+licenseType: Pro
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - m_DrawDistanceSlider: {instanceID: 0}
+  - m_CurrentValueText: {instanceID: 0}
+  - m_GreyBoxActionMap: {fileID: 11400000, guid: bce2f5f51dd73744d88eb5d39f7d6630,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

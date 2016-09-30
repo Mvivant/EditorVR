@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b6f2adf848da30b41a53a28076666aae
+timeCreated: 1475245508
+licenseType: Pro
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - CanvasPrefab: {fileID: 223000012236523280, guid: 74620c9d8de6a334fbbf7af7afc21091,
+      type: 2}
+  - m_GreyBoxActionMap: {fileID: 11400000, guid: bce2f5f51dd73744d88eb5d39f7d6630,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
