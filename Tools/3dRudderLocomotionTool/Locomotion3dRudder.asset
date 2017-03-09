@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e5bc088c9caeb44bc4283dc321b033, type: 3}
+  m_Name: Locomotion3dRudder
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  m_Actions:
+  - {fileID: 114000013581381750}
+  - {fileID: 114000012305667622}
+  - {fileID: 114000012059964466}
+  - {fileID: 114000013313190172}
+  m_ControlSchemes:
+  - m_Name: Locomotion3dRudder
+    m_DeviceSlots:
+    - m_Key: 1
+      m_Type:
+        m_TypeName: UnityEngine.InputNew.Keyboard, Assembly-CSharp, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      m_TagIndex: -1
+    m_ActionMap: {fileID: 11400000}
+    m_Bindings:
+    - sources:
+      - controlIndex: 32
+        deviceKey: 1
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources:
+      - controlIndex: 1
+        deviceKey: 1
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources:
+      - controlIndex: 3
+        deviceKey: 1
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources:
+      - controlIndex: 2
+        deviceKey: 1
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+  m_MapTypeName: Locomotion3dRudder, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  m_CustomNamespace: 
+--- !u!114 &114000012059964466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Up
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 2
+  m_ControlData:
+    componentControlIndices: 
+    controlType:
+      m_TypeName: UnityEngine.InputNew.AxisInputControl, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    name: Up
+    defaultValue: 0
+--- !u!114 &114000012305667622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Right
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 1
+  m_ControlData:
+    componentControlIndices: 
+    controlType:
+      m_TypeName: UnityEngine.InputNew.AxisInputControl, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    name: Right
+    defaultValue: 0
+--- !u!114 &114000013313190172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Rotation
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 3
+  m_ControlData:
+    componentControlIndices: 
+    controlType:
+      m_TypeName: UnityEngine.InputNew.AxisInputControl, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    name: Rotation
+    defaultValue: 0
+--- !u!114 &114000013581381750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Forward
+  m_EditorClassIdentifier: 
+  m_RunInEditMode: 0
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 0
+  m_ControlData:
+    componentControlIndices: 
+    controlType:
+      m_TypeName: UnityEngine.InputNew.AxisInputControl, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    name: Forward
+    defaultValue: 0

@@ -74,7 +74,10 @@ namespace UnityEditor.Experimental.EditorVR
 					toolData = SpawnTool(typeof(BlinkLocomotionTool), out devices, inputDevice);
 					AddToolToDeviceData(toolData, devices);
 
-					var evrMenus = evr.m_Menus;
+                    toolData = SpawnTool(typeof(Locomotion3dRudderTool), out devices, inputDevice);
+                    AddToolToDeviceData(toolData, devices);
+
+                    var evrMenus = evr.m_Menus;
 					var mainMenu = evrMenus.SpawnMainMenu(typeof(MainMenu), inputDevice, false, out deviceData.mainMenuInput);
 					deviceData.mainMenu = mainMenu;
 					deviceData.menuHideFlags[mainMenu] = Menus.MenuHideFlags.Hidden;
