@@ -152,6 +152,7 @@ namespace UnityEditor.Experimental.EditorVR.Core
 				var deviceInputModule = evr.GetModule<DeviceInputModule>();
 				foreach (var proxyType in ObjectUtils.GetImplementationsOfInterface(typeof(IProxy)))
 				{
+					//Debug.Log(proxyType);
 					var proxy = (IProxy)ObjectUtils.CreateGameObjectWithComponent(proxyType, VRView.cameraRig, false);
 					proxy.trackedObjectInput = deviceInputModule.trackedObjectInput;
 					proxy.activeChanged += () => OnProxyActiveChanged(proxy);
@@ -167,6 +168,7 @@ namespace UnityEditor.Experimental.EditorVR.Core
 
 				if (proxy.active)
 				{
+					//Debug.Log("add proxy " + proxy.ToString());
 					var evrDeviceData = evr.m_DeviceData;
 					if (!evrDeviceData.Any(dd => dd.proxy == proxy))
 					{
@@ -179,10 +181,10 @@ namespace UnityEditor.Experimental.EditorVR.Core
 						var ui = evr.GetNestedModule<UI>();
 
 						foreach (var rayOriginPair in proxy.rayOrigins)
-						{
+						{							
 							var node = rayOriginPair.Key;
 							var rayOrigin = rayOriginPair.Value;
-
+							//Debug.Log("ray origin " + node);
 							var systemDevices = deviceInputModule.GetSystemDevices();
 							var actionMap = inputModule.actionMap;
 							for (int j = 0; j < systemDevices.Count; j++)
@@ -191,6 +193,7 @@ namespace UnityEditor.Experimental.EditorVR.Core
 
 								// Find device tagged with the node that matches this RayOrigin node
 								var deviceNode = deviceInputModule.GetDeviceNode(device);
+								//Debug.Log("device " + device + " node " + deviceNode);
 								if (deviceNode.HasValue && deviceNode.Value == node)
 								{
 									var deviceData = new DeviceData();
@@ -200,7 +203,7 @@ namespace UnityEditor.Experimental.EditorVR.Core
 									deviceData.rayOrigin = rayOrigin;
 									deviceData.inputDevice = device;
 									deviceData.uiInput = deviceInputModule.CreateActionMapInput(actionMap, device);
-
+									//Debug.Log("add device " + deviceData.inputDevice.deviceName);
 									// Add RayOrigin transform, proxy and ActionMapInput references to input module list of sources
 									inputModule.AddRaycastSource(proxy, node, deviceData.uiInput, rayOrigin, source =>
 									{

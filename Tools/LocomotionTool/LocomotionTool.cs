@@ -209,7 +209,7 @@ namespace UnityEditor.Experimental.EditorVR.Tools
 			if (DoRotating(consumeControl))
 				return;
 
-			if (m_Preferences.blinkMode)
+			/*if (m_Preferences.blinkMode)
 			{
 				if (DoBlink(consumeControl))
 					return;
@@ -218,7 +218,7 @@ namespace UnityEditor.Experimental.EditorVR.Tools
 			{
 				if (DoFlying(consumeControl))
 					return;
-			}
+			}*/
 
 			if (DoCrawl(consumeControl))
 				return;

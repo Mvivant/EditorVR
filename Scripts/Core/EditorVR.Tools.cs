@@ -92,7 +92,7 @@ namespace UnityEditor.Experimental.EditorVR.Core
 				{
 					var inputDevice = deviceData.inputDevice;
 					ToolData selectionToolData = null;
-
+					//Debug.Log("default" + inputDevice);
 					if (deviceData.proxy != proxy)
 						continue;
 

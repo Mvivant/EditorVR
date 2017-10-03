@@ -23,7 +23,8 @@ namespace UnityEditor.Experimental.EditorVR.Modules
 		readonly Dictionary<string, Node> m_TagToNode = new Dictionary<string, Node>
 		{
 			{ "Left", Node.LeftHand },
-			{ "Right", Node.RightHand }
+			{ "Right", Node.RightHand },
+			{ "Middle", Node.Middle }
 		};
 
 		// Local method use only -- created here to reduce garbage collection
@@ -42,7 +43,7 @@ namespace UnityEditor.Experimental.EditorVR.Modules
 			for (int i = 0; i < devices.Count; i++)
 			{
 				var device = devices[i];
-				if (device is VRInputDevice && device.tagIndex != -1)
+				//if (device is VRInputDevice && device.tagIndex != -1)
 					m_SystemDevices.Add(device);
 			}
 

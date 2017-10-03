@@ -7,7 +7,8 @@ namespace UnityEditor.Experimental.EditorVR
 	public enum Node
 	{
 		LeftHand,
-		RightHand
+		RightHand,
+		Middle,
 	}
 }
 #endif

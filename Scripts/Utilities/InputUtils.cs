@@ -37,6 +37,7 @@ namespace UnityEditor.Experimental.EditorVR.Utilities
 
 		public static void CollectDeviceSlotsFromActionMapInput(ActionMapInput actionMapInput, ref HashSet<DeviceSlot> deviceSlots)
 		{
+			//UnityEngine.Debug.Log(actionMapInput.ToString());
 			foreach (var deviceSlot in actionMapInput.controlScheme.deviceSlots)
 			{
 				deviceSlots.Add(deviceSlot);
